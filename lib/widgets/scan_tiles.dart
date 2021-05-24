@@ -98,38 +98,4 @@ class ScanTiles extends StatelessWidget {
               ),
             ));
   }
-
-  void _showAlert(BuildContext context) {
-    showDialog(
-        context: context,
-        barrierDismissible: true,
-        builder: (context) {
-          return AlertDialog(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10.0)),
-            title: Text('Quisque'),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text('Retium ut lacinia in, elementum id enim.'),
-                FlutterLogo(
-                  size: 100.0,
-                )
-              ],
-            ),
-            actions: [
-              TextButton(
-                child: Text('Cancel'),
-                onPressed: () => Navigator.of(context).pop(),
-              ),
-              TextButton(
-                child: Text('Ok'),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              )
-            ],
-          );
-        });
-  }
 }
